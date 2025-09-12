@@ -1,0 +1,2 @@
+# Team B specific runtime dependencies
+requests==2.32.3

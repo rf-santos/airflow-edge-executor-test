@@ -1,0 +1,19 @@
+# Python venvs
+.venv/
+venv/
+.env
+
+# Airflow local env
+airflow-env/
+logs/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Docker
+**/.pytest_cache/
+**/.mypy_cache/

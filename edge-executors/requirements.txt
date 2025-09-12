@@ -1,0 +1,4 @@
+# Additional Python deps used by tasks and the Edge worker
+# Keep minimal for fast cold start; extend per-team with a separate image if needed
+requests==2.32.3
+# airflow[edge] is included in base image; install extras here only if needed
