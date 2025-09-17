@@ -176,16 +176,5 @@ docker compose logs -f airflow-triggerer | sed -n '1,120p'
 docker compose logs -f airflow-rbac-init | sed -n '1,200p'
 ```
 
-Access the UI at http://localhost:8080 and log in as `admin` / `admin` or the demo team users above.
-
-## Removed legacy local-run files
-This repository has been simplified to container-only. The following local-only artifacts are no longer tracked or needed:
-- `airflow.cfg` (local path-based config) – replaced by env vars in `docker-compose.yaml`
-- `requirements.txt` (venv) – Python deps are installed in the Dockerfiles
-- `start_airflow.sh`, `stop_airflow.sh` – lifecycle is managed via Docker Compose
-- `__pycache__/`, `*.pyc`, local `.venv/` – runtime artifacts
-
-If you still have them locally, you can delete them safely. They’re also covered by `.gitignore`.
-
 ## License
 This repository is for educational/testing purposes. See Apache Airflow license for production usage.
